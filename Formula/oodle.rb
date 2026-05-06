@@ -11,7 +11,7 @@ class Oodle < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/oodle-ai/oodle-cli/releases/download/v0.5.0/oodle-cli_0.5.0_darwin_amd64.tar.gz"
-      sha256 "ab0149497c6a073f9091e7ccc32dd9042d95c929513c22db0eed717c57e2c6e5"
+      sha256 "fe48e24bc18a0dfeca2d0fc82dc16a924c6f81c5eff8c19cf8f1889969395bad"
 
       def install
         bin.install "oodle"
@@ -19,7 +19,7 @@ class Oodle < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/oodle-ai/oodle-cli/releases/download/v0.5.0/oodle-cli_0.5.0_darwin_arm64.tar.gz"
-      sha256 "c8ae6e5e7df6c9351c1f9c77b1d798fd67264b471e2ed678f04355b0368ff6b3"
+      sha256 "e531c26af41c544056d31af10e567b3dd650126487690ddf7268c04f88016dac"
 
       def install
         bin.install "oodle"
@@ -30,14 +30,14 @@ class Oodle < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/oodle-ai/oodle-cli/releases/download/v0.5.0/oodle-cli_0.5.0_linux_amd64.tar.gz"
-      sha256 "85743a7fce297d7b5ebb1d7d61ca4cf055243273350c5a1562918e04991856ff"
+      sha256 "05b485fb608ce0abbfe88cdd3875b05215e2cbcbf1651ce84dc34b2807f368ff"
       def install
         bin.install "oodle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/oodle-ai/oodle-cli/releases/download/v0.5.0/oodle-cli_0.5.0_linux_arm64.tar.gz"
-      sha256 "e7dced801aefb3a3dfbc9390cacbb0e7fae62485571ff1add4a7dc5eb965f064"
+      sha256 "50998f17099f3cd2b6a9ec8e2c5e0a94ee92236b90856818b47b260e741741bf"
       def install
         bin.install "oodle"
       end
