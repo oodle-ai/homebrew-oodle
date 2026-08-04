@@ -5,21 +5,21 @@
 class Oodle < Formula
   desc "CLI for the Oodle observability platform"
   homepage "https://github.com/oodle-ai/oodle-cli"
-  version "0.11.0"
+  version "0.12.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oodle-ai/oodle-cli/releases/download/v0.11.0/oodle-cli_0.11.0_darwin_amd64.tar.gz"
-      sha256 "e2574489cd71d0c6ab9830d27fe8fcb5f7a1a65497ffe7eafe567177adc8931d"
+      url "https://github.com/oodle-ai/oodle-cli/releases/download/v0.12.0/oodle-cli_0.12.0_darwin_amd64.tar.gz"
+      sha256 "19664e57e1e8b6c9d8cccee21ef281c25ffb2c775956e210b93bbb771ac87968"
 
       def install
         bin.install "oodle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oodle-ai/oodle-cli/releases/download/v0.11.0/oodle-cli_0.11.0_darwin_arm64.tar.gz"
-      sha256 "e6cae03d02c6bd8a744b64611f724eeae4599e808027783801fbf5c67bce31ff"
+      url "https://github.com/oodle-ai/oodle-cli/releases/download/v0.12.0/oodle-cli_0.12.0_darwin_arm64.tar.gz"
+      sha256 "ddd9b2078c3158ab25ccde2e1cf2815f5f8b487b01d309bcdf3a02c13bb4dafc"
 
       def install
         bin.install "oodle"
@@ -29,15 +29,15 @@ class Oodle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oodle-ai/oodle-cli/releases/download/v0.11.0/oodle-cli_0.11.0_linux_amd64.tar.gz"
-      sha256 "dbee0cce951ea0f60b10fe62247ec890e8b294ee950ef9f5a6d088f9af5cd515"
+      url "https://github.com/oodle-ai/oodle-cli/releases/download/v0.12.0/oodle-cli_0.12.0_linux_amd64.tar.gz"
+      sha256 "09368116c94f5c5153155c2f6c928c99728e8458eaa7a28437f6cbb9d4062271"
       def install
         bin.install "oodle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oodle-ai/oodle-cli/releases/download/v0.11.0/oodle-cli_0.11.0_linux_arm64.tar.gz"
-      sha256 "f752501d0d51424e50762df70414392187c1c4b5f986a6fd763320699f028064"
+      url "https://github.com/oodle-ai/oodle-cli/releases/download/v0.12.0/oodle-cli_0.12.0_linux_arm64.tar.gz"
+      sha256 "c6225d2a0afd57853d5f1a3863fa9d1b1653fc8fb592f04987174b9f66d9d865"
       def install
         bin.install "oodle"
       end
